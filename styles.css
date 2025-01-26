@@ -1,0 +1,147 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px; /* Increased base font size */
+  text-align: center;
+}
+
+header {
+  background-color: #88b04b;
+  color: white;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Larger header font size */
+  
+  
+}
+
+header p {
+  font-size: 1.3em; /* Larger subheading font size */
+}
+
+main {
+  display: grid;
+  gap: 2em;
+  padding: 1em;
+  padding-left: 3em; /* Added left padding */
+}
+
+.recipe {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1em; /* Increased padding inside recipes */
+  font-size: 1.2em; /* Slightly larger font for recipe content */
+  
+}
+
+.recipe h2 {
+  color: #444;
+  text-align: center;
+  font-size: 1.6em; /* Larger recipe title */
+}
+
+/* Add rounded corners, shadow, and responsive width to images */
+img {
+  border-radius: 20px; /* Rounds the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+  width: 35%; /* Consistent image size */
+  max-width: 500px; /* Limits the maximum width of the image */
+  margin: 20px auto; /* Centers the image */
+  display: block; /* Ensures it respects the margin auto */
+}
+
+/* Add a hover effect for a smooth zoom animation */
+img:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.recipe h3 {
+  margin-top: 1em;
+  color: #555;
+  font-size: 1.2em; /* Larger subheading font size */
+}
+
+/* Remove the up and down padding for the ordered list */
+ol {
+  margin: 0;
+  padding: 0 1.5em;
+  list-style-position: inside; /* Keeps numbers inside the list */
+  text-align: center; /* Left-align the instruction text */
+}
+
+/* Remove bullet points from unordered list and keep numbers */
+ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0 1.5em;
+}
+
+/* Ensure no text decorations on the bullet points but keep numbers */
+ul li {
+  text-decoration: none; /* Remove any text decoration from the bullet points */
+}
+
+/* Center the numbers in the ordered list */
+ol li::marker {
+  text-align: center; /* Centers the numbers */
+  display: block; /* Each number is on its own line */
+  font-size: 1.3em; /* Slightly larger number font */
+}
+
+
+footer {
+  text-align: center;
+  padding: 1.5em 0; /* Slightly more padding for footer */
+  background-color: #96642e97;
+  color: white;
+  font-size: 1.2em; /* Larger footer font size */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+body.dark-mode header {
+  background-color: #444;
+}
+
+body.dark-mode .recipe {
+  background: #555;
+  color: #f5f5f5;
+}
+
+body.dark-mode footer {
+  background-color: #444;
+}
+
+
+button {
+  background-color: #88b04b; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 1em 2em; /* Add padding to make the button larger */
+  font-size: 1.2em; /* Increase font size */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: #77a140; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+button:focus {
+  outline: none; /* Remove the default outline when focused */
+}
